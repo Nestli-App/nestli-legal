@@ -17,13 +17,13 @@
 <body>
 
 <h1>Nestli Privacy Policy</h1>
-<p class="meta">Last updated: 20 April 2026 (v3)</p>
+<p class="meta">Last updated: 5 May 2026</p>
 
 <p>
 This Privacy Policy describes how Nestli ("we", "our", or "the app"), a mobile
 application for tracking baby care activities, collects, uses, stores, and
 shares information about you when you use the app. It should be read
-alongside our in-app Terms &amp; Conditions (Settings → Terms &amp; Conditions).
+alongside our <a href="/terms/">Terms &amp; Conditions</a>.
 </p>
 
 <h2>1. Information We Collect</h2>
@@ -32,7 +32,7 @@ alongside our in-app Terms &amp; Conditions (Settings → Terms &amp; Conditions
   <li><strong>Account information</strong> — email address, username, and password (stored in hashed form) provided during sign-up. A user identifier (UUID) is generated server-side to identify your account.</li>
   <li><strong>Baby profile data</strong> — baby name, date of birth, sex, birth measurements, and cover photo that you voluntarily enter.</li>
   <li><strong>Care logs</strong> — feeding, diaper, sleep, growth, health, and milestone records that you create in the app.</li>
-  <li><strong>Photos</strong> — images you choose to upload from your device camera or photo library. Three sizes (original, preview, thumbnail) are generated on-device and stored in our private photo bucket.</li>
+  <li><strong>Photos</strong> — images you choose to upload from your device camera or photo library. Three sizes (original, preview, thumbnail) are generated on-device and stored in our private photo bucket. By uploading any photo to Nestli, you confirm that you own or have the necessary rights to that image, and — where the image depicts a child — that you are the parent or legal guardian of the child or have authority from them. See section 5 of the <a href="/terms/">Terms &amp; Conditions</a> for the full responsibilities and warranties that apply to content you upload.</li>
   <li><strong>Voice recordings</strong> (optional) — when you use the voice-log feature, audio is sent to our server for transcription into a care log. Audio is processed in memory only and is not persisted by Nestli. See section 5 for the third-party transcription provider.</li>
   <li><strong>Usage data</strong> — basic, non-identifying information about how the app is used (e.g. feature interactions) for reliability and improvement. We do not use analytics SDKs that profile users.</li>
 </ul>
@@ -77,6 +77,14 @@ global content delivery network, using short-lived signed URLs — this lets
 users in different regions (including mainland China, via CloudFront edge
 locations in Hong Kong, Tokyo, or Singapore) load photos quickly without
 making the bucket public.
+</p>
+<p>
+Photos uploaded to Nestli pass through an automated image-moderation step
+that screens for content that breaches our policies or applicable law.
+This screening is automated and best-effort: we do not warrant that it
+will catch every prohibited image, and we may remove a photo we
+subsequently determine to be in breach. Concerns about a specific photo
+can be reported to the contact address in section 11.
 </p>
 <p>
 All data is encrypted in transit (HTTPS). Supabase and AWS S3 encrypt data
