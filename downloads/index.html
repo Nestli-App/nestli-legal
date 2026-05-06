@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nestli — Download</title>
-<meta name="description" content="Download Nestli for Android — English (global) and 中文 (China).">
+<meta name="description" content="Download Nestli for Android — English and global Chinese APK builds.">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -192,6 +192,35 @@
     gap: 4px;
   }
   .dl-host strong { color: var(--text-2); font-weight: 600; }
+  .apk-warning {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border: 1px solid #f0d264;
+    border-radius: 8px;
+    background: #fff8e1;
+    color: #5a4500;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .apk-warning strong { display: block; color: #3f3200; margin-bottom: 4px; }
+  .apk-warning ul { padding-left: 18px; margin: 6px 0 0; }
+  .apk-warning li { margin-bottom: 4px; }
+  .consent-check {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 12px;
+    color: var(--text-2);
+    line-height: 1.45;
+    margin-bottom: 14px;
+  }
+  .consent-check input {
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    accent-color: var(--brand);
+    flex-shrink: 0;
+  }
 
   .note {
     margin-top: 36px;
@@ -255,7 +284,7 @@
 <main>
   <section class="page-hero">
     <h1>Download Nestli</h1>
-    <p class="page-sub">Direct APK for Android. Pick the build for your region — the content inside each app is the same.</p>
+    <p class="page-sub">Direct APK for Android. Choose the language build that fits you; Chinese language support does not mean mainland China local operation.</p>
   </section>
 
   <section class="dl-grid">
@@ -263,16 +292,31 @@
     <div class="dl-card">
       <span class="region-tag">Global · EN</span>
       <h2>English build</h2>
-      <p class="sub">Android APK for users outside mainland China. Installs from GitHub with a single tap.</p>
+      <p class="sub">Android APK for global English-language users. Installs from GitHub with a single tap.</p>
       <div class="dl-host">Hosted on <strong>GitHub</strong></div>
       <a class="dl-card-btn placeholder" aria-disabled="true">Download APK</a>
       <div class="dl-meta">v0.3.1 · Android 10+</div>
     </div>
 
     <div class="dl-card" lang="zh-CN">
-      <span class="region-tag">中国大陆 · 中文</span>
-      <h2>中文版</h2>
-      <p class="sub">面向中国大陆用户的安卓 APK。通过 Gitee 下载，访问速度更快、更稳定。</p>
+      <span class="region-tag">Global · 中文</span>
+      <h2>全球中文用户 Android APK</h2>
+      <p class="sub">本 APK 版本仅为方便全球中文用户在 Android 设备上安装使用。本应用目前未在中国大陆地区完成 APP 备案或作为中国大陆地区本地化应用正式运营。</p>
+      <div class="apk-warning">
+        <strong>重要提示</strong>
+        如您位于中国大陆地区,请注意:
+        <ul>
+          <li>中国大陆地区用户不可使用 AI 功能。</li>
+          <li>中国大陆地区用户不可使用付费订阅、应用内购买或其他商业化功能。</li>
+          <li>本应用不会向中国大陆地区用户进行广告投放、营销推广或商业推送。</li>
+          <li>本应用的数据存储和处理可能发生在澳大利亚或其他中国大陆以外地区。</li>
+          <li>如您所在地法律法规不允许下载、安装或使用本应用,请勿继续下载或使用。</li>
+        </ul>
+      </div>
+      <label class="consent-check">
+        <input type="checkbox">
+        <span>我已阅读并理解上述提示,并确认自行承担下载、安装和使用本 APK 的合规责任。</span>
+      </label>
       <div class="dl-host">托管于 <strong>Gitee</strong></div>
       <a class="dl-card-btn placeholder" aria-disabled="true">下载 APK</a>
       <div class="dl-meta">v0.3.1 · 安卓 10 及以上</div>
