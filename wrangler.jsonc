@@ -2,11 +2,14 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "nestli-legal",
   "compatibility_date": "2026-05-06",
+  "main": "_worker.js",
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
   "compatibility_flags": [
     "nodejs_compat"

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-locale="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nestli — Baby tracking, with AI in your corner</title>
-<meta name="description" content="Feeding, sleep, growth, and photos — logged effortlessly, understood by an AI that learns your baby.">
+<title data-i18n="page.home.title">Nestli — Baby tracking, with AI in your corner</title>
+<meta name="description" data-i18n-attr="content:page.home.description" content="Feeding, sleep, growth, and photos — logged effortlessly, understood by an AI that learns your baby.">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -19,7 +19,7 @@
   }
   html, body { height: 100%; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Inter, Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.55;
     color: var(--text);
@@ -69,6 +69,7 @@
   }
   .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; color: var(--text); }
   .logo .dot { color: var(--brand-soft); }
+  .nav-right { display: flex; align-items: center; gap: 24px; }
   .nav-links a {
     color: var(--text-2);
     margin-left: 28px;
@@ -76,7 +77,21 @@
     font-weight: 500;
     transition: color 0.15s ease;
   }
+  .nav-links a:first-child { margin-left: 0; }
   .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+  .lang-switch {
+    font-size: 13px;
+    color: var(--text-3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  .lang-switch .lang-link { color: var(--text-2); font-weight: 500; }
+  .lang-switch .lang-link:hover { color: var(--text); text-decoration: none; }
+  .lang-switch .lang-active { color: var(--text); font-weight: 600; }
+  .lang-switch .lang-sep { color: var(--text-3); }
 
   main {
     position: relative; z-index: 1;
@@ -220,6 +235,7 @@
   @media (max-width: 820px) {
     nav.top, main, footer { padding-left: 22px; padding-right: 22px; }
     nav.top { padding-top: 18px; padding-bottom: 18px; }
+    .nav-right { flex-direction: column; align-items: flex-end; gap: 6px; }
     .dl-btn { min-width: 0; flex: 1 1 140px; }
     footer { flex-direction: column; gap: 8px; text-align: center; }
     footer .links a:first-child { margin-left: 0; }
@@ -243,39 +259,42 @@
 
 <nav class="top">
   <a href="/" class="logo">nestli<span class="dot">.</span></a>
-  <div class="nav-links">
-    <a href="/pricing/">Pricing</a>
-    <a href="/downloads/">Download</a>
-    <a href="/security/">Security</a>
-    <a href="/privacy/">Privacy</a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="/pricing/" data-i18n="common.nav.pricing">Pricing</a>
+      <a href="/downloads/" data-i18n="common.nav.downloads">Download</a>
+      <a href="/security/" data-i18n="common.nav.security">Security</a>
+      <a href="/privacy/" data-i18n="common.nav.privacy">Privacy</a>
+    </div>
+    <div class="lang-switch" data-lang-switcher><a class="lang-link" href="https://nestliapp.com/" hreflang="en">English</a><span class="lang-sep" aria-hidden="true">·</span><a class="lang-link" href="https://cn.nestliapp.com/" hreflang="zh-Hans">中文</a></div>
   </div>
 </nav>
 
 <main>
   <section class="hero">
-    <h1>Baby tracking,<br><span class="accent-wrap"><span id="hero-accent" class="accent">with AI in your corner.</span></span></h1>
-    <p class="tagline">Feeding, sleep, growth, and photos — logged in seconds, understood by an <strong>AI that learns your baby's patterns</strong>. Ask anything; get answers grounded in your own data, not generic advice.</p>
+    <h1><span data-i18n="page.home.h1Top">Baby tracking,</span><br><span class="accent-wrap"><span id="hero-accent" class="accent">with AI in your corner.</span></span></h1>
+    <p class="tagline" data-i18n-html="page.home.tagline">Feeding, sleep, growth, and photos — logged in seconds, understood by an <strong>AI that learns your baby's patterns</strong>. Ask anything; get answers grounded in your own data, not generic advice.</p>
 
     <div class="downloads">
       <span class="dl-btn placeholder" role="link" aria-disabled="true">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
         <span class="labels">
-          <span class="lbl-top">Coming soon</span>
-          <span class="lbl-main">App Store</span>
+          <span class="lbl-top" data-i18n="page.home.btn.comingSoon">Coming soon</span>
+          <span class="lbl-main" data-i18n="page.home.btn.appStore">App Store</span>
         </span>
       </span>
       <span class="dl-btn placeholder" role="link" aria-disabled="true">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zM14.499 12.707l2.803 2.803-10.18 5.87 7.377-8.673zM20.83 10.87a1 1 0 0 1 0 1.776l-2.97 1.714-3.057-3.057 3.057-3.057 2.97 1.624zM5.123 2.272l10.182 5.87-2.802 2.802-7.38-8.672z"/></svg>
         <span class="labels">
-          <span class="lbl-top">Coming soon</span>
-          <span class="lbl-main">Google Play</span>
+          <span class="lbl-top" data-i18n="page.home.btn.comingSoon">Coming soon</span>
+          <span class="lbl-main" data-i18n="page.home.btn.googlePlay">Google Play</span>
         </span>
       </span>
       <a href="/downloads/" class="dl-btn">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         <span class="labels">
-          <span class="lbl-top">Direct</span>
-          <span class="lbl-main">APK</span>
+          <span class="lbl-top" data-i18n="page.home.btn.directLabel">Direct</span>
+          <span class="lbl-main" data-i18n="page.home.btn.apk">APK</span>
         </span>
       </a>
     </div>
@@ -283,32 +302,43 @@
 </main>
 
 <footer>
-  <div>&copy; 2026 Nestli</div>
+  <div data-i18n="common.footer.copyright">&copy; 2026 Nestli</div>
   <div class="links">
-    <a href="/pricing/">Pricing</a>
-    <a href="/privacy/">Privacy</a>
-    <a href="/security/">Security</a>
-    <a href="/terms/">Terms</a>
-    <a href="/delete-account.html">Delete account</a>
+    <a href="/pricing/" data-i18n="common.footer.pricing">Pricing</a>
+    <a href="/privacy/" data-i18n="common.footer.privacy">Privacy</a>
+    <a href="/security/" data-i18n="common.footer.security">Security</a>
+    <a href="/terms/" data-i18n="common.footer.terms">Terms</a>
+    <a href="/delete-account.html" data-i18n="common.footer.deleteAccount">Delete account</a>
   </div>
 </footer>
 
+<script src="/i18n.js" defer></script>
+
+<script type="application/json" id="hero-phrases" data-i18n-html="page.home.phrases">
+["with AI in your corner.","that learns your baby.","grounded in your own data.","smarter every week."]
+</script>
+
 <script>
   // Cycle the hero accent phrase every few seconds with a 3D flip.
+  // Phrases are sourced from the inline JSON tag above so the Worker can
+  // localize them on cn.nestliapp.com without touching this script.
   // Respects prefers-reduced-motion — if set, leaves the first phrase
   // in place and never animates.
   (function () {
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) return;
 
-    var phrases = [
-      'with AI in your corner.',
-      'that learns your baby.',
-      'grounded in your own data.',
-      'smarter every week.'
-    ];
+    var phrases;
+    try {
+      phrases = JSON.parse(document.getElementById('hero-phrases').textContent);
+    } catch (e) {
+      phrases = ['with AI in your corner.'];
+    }
+    if (!phrases || !phrases.length) return;
+
     var el = document.getElementById('hero-accent');
     if (!el) return;
+    el.textContent = phrases[0];
 
     var i = 0;
     var HOLD_MS = 3200;    // how long a phrase rests, on-screen
