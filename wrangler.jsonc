@@ -3,6 +3,12 @@
   "name": "nestli-legal",
   "compatibility_date": "2026-05-06",
   "main": "_worker.js",
+  // Codified so a successful `wrangler deploy` cannot land without
+  // cn.nestliapp.com being attached to this Worker. If the binding is
+  // changed in the dashboard, the next deploy will reconcile it back.
+  "routes": [
+    { "pattern": "cn.nestliapp.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   },
