@@ -98,17 +98,9 @@
 
     "downloads": {
       "title": "Nestli — 下载",
-      "description": "下载 Nestli Android 中文版 APK。",
+      "description": "下载 Nestli Android APK — 英文版托管于 GitHub，中文版托管于 Gitee。",
       "h1": "下载 Nestli",
-      "sub": "Android 用户可直接下载 APK。我们提供英文版与中文版两个构建；部分功能，例如 AI 和付费套餐，仅在支持地区开放。",
-      "global": {
-        "tag": "中文版",
-        "title": "Android APK",
-        "sub": "面向中文用户的 Android APK。通过 Gitee 托管，一键下载安装。",
-        "host": "托管于 <strong>Gitee</strong>",
-        "btn": "下载 APK",
-        "meta": "v0.3.1 · Android 10+"
-      },
+      "sub": "Android 用户可直接下载 APK。英文版与中文版为两个独立构建：英文版托管于 GitHub，中文版托管于 Gitee；部分功能，例如 AI 和付费套餐，仅在支持地区开放。",
       "note": "安装 APK 需要在 Android 设置中允许浏览器“安装未知应用”。路径通常为：设置 → 应用 → 特殊应用权限 → 安装未知应用。该 APK 使用与 Google Play 相同的上传密钥签名。"
     },
 

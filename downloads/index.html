@@ -289,18 +289,42 @@
 
   <section class="dl-grid">
 
-    <div class="dl-card">
-      <span class="region-tag" data-i18n="page.downloads.global.tag">Global</span>
-      <h2 data-i18n="page.downloads.global.title">Android APK</h2>
-      <p class="sub" data-i18n="page.downloads.global.sub">Android APK for global users. Installs from GitHub with a single tap.</p>
-      <div class="apk-warning" data-locale-only="zh-Hans" data-i18n-html="page.downloads.warning"></div>
-      <label class="consent-check" data-locale-only="zh-Hans">
+    <!-- Each card is intentionally hardcoded in its target audience's
+         language — both cards always show, on both nestliapp.com and
+         cn.nestliapp.com. Page chrome (h1, sub, footer, nav) still
+         localizes via data-i18n. -->
+
+    <div class="dl-card" lang="en">
+      <span class="region-tag">Global · EN</span>
+      <h2>English build</h2>
+      <p class="sub">Android APK for global English-language users. Installs from GitHub with a single tap.</p>
+      <div class="dl-host">Hosted on <strong>GitHub</strong></div>
+      <a class="dl-card-btn placeholder" aria-disabled="true">Download APK</a>
+      <div class="dl-meta">v0.3.1 · Android 10+</div>
+    </div>
+
+    <div class="dl-card" lang="zh-Hans">
+      <span class="region-tag">中文版</span>
+      <h2>全球中文用户 Android APK</h2>
+      <p class="sub">本 APK 版本仅为方便全球中文用户在 Android 设备上安装使用。本应用目前未在中国大陆地区完成 APP 备案或作为中国大陆地区本地化应用正式运营。</p>
+      <div class="apk-warning">
+        <strong>重要提示</strong>
+        如您位于中国大陆地区，请注意：
+        <ul>
+          <li>中国大陆地区用户不可使用 AI 功能。</li>
+          <li>中国大陆地区用户不可使用付费订阅、应用内购买或其他商业化功能。</li>
+          <li>本应用不会向中国大陆地区用户进行广告投放、营销推广或商业推送。</li>
+          <li>本应用的数据存储和处理可能发生在澳大利亚或其他中国大陆以外地区。</li>
+          <li>如您所在地法律法规不允许下载、安装或使用本应用，请勿继续下载或使用。</li>
+        </ul>
+      </div>
+      <label class="consent-check">
         <input type="checkbox">
-        <span data-i18n="page.downloads.consent"></span>
+        <span>我已阅读并理解上述提示，并确认自行承担下载、安装和使用本 APK 的合规责任。</span>
       </label>
-      <div class="dl-host" data-i18n-html="page.downloads.global.host">Hosted on <strong>GitHub</strong></div>
-      <a class="dl-card-btn placeholder" aria-disabled="true" data-i18n="page.downloads.global.btn">Download APK</a>
-      <div class="dl-meta" data-i18n="page.downloads.global.meta">v0.3.1 · Android 10+</div>
+      <div class="dl-host">托管于 <strong>Gitee</strong></div>
+      <a class="dl-card-btn placeholder" aria-disabled="true">下载 APK</a>
+      <div class="dl-meta">v0.3.1 · 安卓 10 及以上</div>
     </div>
 
   </section>
@@ -320,8 +344,6 @@
     <a href="/delete-account.html" data-i18n="common.footer.deleteAccount">Delete account</a>
   </div>
 </footer>
-
-<script src="/i18n.js" defer></script>
 
 </body>
 </html>
