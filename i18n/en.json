@@ -98,17 +98,9 @@
 
     "downloads": {
       "title": "Nestli — Download",
-      "description": "Download Nestli for Android — global APK build.",
+      "description": "Download Nestli for Android — English build on GitHub, Chinese build on Gitee.",
       "h1": "Download Nestli",
-      "sub": "Direct APK for Android. The same build is offered worldwide; some features (AI, paid plans) are only available in supported regions.",
-      "global": {
-        "tag": "Global",
-        "title": "Android APK",
-        "sub": "Android APK for global users. Installs from GitHub with a single tap.",
-        "host": "Hosted on <strong>GitHub</strong>",
-        "btn": "Download APK",
-        "meta": "v0.3.1 · Android 10+"
-      },
+      "sub": "Direct APK for Android. Two separate builds: the English build is hosted on GitHub; the Chinese-language build is hosted on Gitee. Some features (AI, paid plans) are only available in supported regions.",
       "note": "Installing an APK requires allowing \"Install unknown apps\" for your browser in Android Settings → Apps → Special app access. The APK is signed with the same upload key used on Google Play."
     },
 
