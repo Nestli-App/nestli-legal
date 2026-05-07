@@ -41,15 +41,8 @@
   }
   .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; color: var(--text); }
   .logo .dot { color: var(--brand-soft); }
-  .nav-right { display: flex; align-items: center; gap: 24px; }
   .nav-links a { color: var(--text-2); margin-left: 28px; font-size: 15px; font-weight: 500; transition: color 0.15s ease; }
-  .nav-links a:first-child { margin-left: 0; }
   .nav-links a:hover { color: var(--text); text-decoration: none; }
-  .lang-switch { font-size: 13px; color: var(--text-3); display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
-  .lang-switch .lang-link { color: var(--text-2); font-weight: 500; }
-  .lang-switch .lang-link:hover { color: var(--text); text-decoration: none; }
-  .lang-switch .lang-active { color: var(--text); font-weight: 600; }
-  .lang-switch .lang-sep { color: var(--text-3); }
 
   main {
     flex: 1;
@@ -121,7 +114,6 @@
     nav.top, main, footer { padding-left: 22px; padding-right: 22px; }
     main { padding-top: 24px; padding-bottom: 44px; }
     h1 { font-size: 30px; }
-    .nav-right { flex-direction: column; align-items: flex-end; gap: 6px; }
     footer { flex-direction: column; gap: 8px; text-align: center; }
     footer .links a:first-child { margin-left: 0; }
   }
@@ -131,14 +123,11 @@
 
 <nav class="top">
   <a href="/" class="logo">nestli<span class="dot">.</span></a>
-  <div class="nav-right">
-    <div class="nav-links">
-      <a href="/pricing/" data-i18n="common.nav.pricing">Pricing</a>
-      <a href="/downloads/" data-i18n="common.nav.downloads">Download</a>
-      <a href="/security/" data-i18n="common.nav.security">Security</a>
-      <a href="/privacy/" data-i18n="common.nav.privacy">Privacy</a>
-    </div>
-    <div class="lang-switch" data-lang-switcher><a class="lang-link" href="https://nestliapp.com/" hreflang="en">English</a><span class="lang-sep" aria-hidden="true">·</span><a class="lang-link" href="https://cn.nestliapp.com/" hreflang="zh-Hans">中文</a></div>
+  <div class="nav-links">
+    <a href="/pricing/" data-i18n="common.nav.pricing">Pricing</a>
+    <a href="/downloads/" data-i18n="common.nav.downloads">Download</a>
+    <a href="/security/" data-i18n="common.nav.security">Security</a>
+    <a href="/privacy/" data-i18n="common.nav.privacy">Privacy</a>
   </div>
 </nav>
 
@@ -232,8 +221,6 @@ If you have questions about these Terms, please contact us at
     <a href="/delete-account.html" data-i18n="common.footer.deleteAccount">Delete account</a>
   </div>
 </footer>
-
-<script src="/i18n.js" defer></script>
 
 </body>
 </html>
