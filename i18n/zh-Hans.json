@@ -98,14 +98,14 @@
 
     "downloads": {
       "title": "Nestli — 下载",
-      "description": "下载 Nestli Android 全球 APK 版本。",
+      "description": "下载 Nestli Android 中文版 APK。",
       "h1": "下载 Nestli",
-      "sub": "Android 用户可直接下载 APK。我们在全球提供同一个安装包；部分功能，例如 AI 和付费套餐，仅在支持地区开放。",
+      "sub": "Android 用户可直接下载 APK。我们提供英文版与中文版两个构建；部分功能，例如 AI 和付费套餐，仅在支持地区开放。",
       "global": {
-        "tag": "全球版本",
+        "tag": "中文版",
         "title": "Android APK",
-        "sub": "面向全球用户的 Android APK。通过 GitHub 托管，一键下载安装。",
-        "host": "托管于 <strong>GitHub</strong>",
+        "sub": "面向中文用户的 Android APK。通过 Gitee 托管，一键下载安装。",
+        "host": "托管于 <strong>Gitee</strong>",
         "btn": "下载 APK",
         "meta": "v0.3.1 · Android 10+"
       },
