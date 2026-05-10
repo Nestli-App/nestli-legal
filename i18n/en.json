@@ -79,7 +79,7 @@
         "f6": "<strong>Unlimited</strong> photo & voice logs",
         "f7": "<strong>Priority</strong> backup",
         "f8": "Family members get Premium",
-        "f9": "Upload <strong>original photos</strong>"
+        "f9": "Upload <strong>high-resolution photos</strong>"
       },
       "family": {
         "name": "Premium Family",
@@ -94,7 +94,7 @@
         "f6": "Unlimited photo & voice for everyone",
         "f7": "<strong>Priority</strong> backup & support",
         "f8": "<strong>All family members get Premium</strong>",
-        "f9": "Upload <strong>original photos</strong>"
+        "f9": "Upload <strong>high-resolution photos</strong>"
       },
       "note": "Prices shown in AUD. Subscriptions are processed by the Google Play Store (iOS coming later) and renew monthly unless cancelled before the next billing period. Cancel any time — your plan stays active until period end. See the full <a href=\"/terms/\">Terms</a> for fair-use and refund details."
     },

@@ -79,7 +79,7 @@
         "f6": "<strong>无限</strong>照片与语音记录",
         "f7": "<strong>优先</strong>备份",
         "f8": "家庭成员不自动获得 Premium 权益",
-        "f9": "可上传<strong>原始照片</strong>"
+        "f9": "可上传<strong>高分辨率照片</strong>"
       },
       "family": {
         "name": "Premium Family",
@@ -94,7 +94,7 @@
         "f6": "所有成员均可无限使用照片与语音记录",
         "f7": "<strong>优先</strong>备份与支持",
         "f8": "<strong>所有家庭成员均可获得 Premium 权益</strong>",
-        "f9": "可上传<strong>原始照片</strong>"
+        "f9": "可上传<strong>高分辨率照片</strong>"
       },
       "note": "价格以澳元显示。订阅由 Google Play Store 处理（iOS 稍后上线），除非你在下一个计费周期开始前取消，否则会按月自动续订。你可以随时取消，取消后套餐权益会保留至当前周期结束。关于合理使用和退款规则，请查看完整的 <a href=\"/terms/\">服务条款</a>。"
     },
