@@ -299,8 +299,8 @@
       <h2>Global build</h2>
       <p class="sub">Android APK for global users. Installs from GitHub with a single tap.</p>
       <div class="dl-host">Hosted on <strong>GitHub</strong></div>
-      <a class="dl-card-btn placeholder" aria-disabled="true">Download APK</a>
-      <div class="dl-meta">v0.4.9 · Android 7.0+</div>
+      <a class="dl-card-btn" href="https://github.com/jimmy1992abc/nestli-legal/releases/download/v0.4.10/nestli-release.apk" rel="noopener">Download APK</a>
+      <div class="dl-meta">v0.4.10 · Android 7.0+</div>
     </div>
 
     <div class="dl-card" lang="zh-Hans">
@@ -320,12 +320,12 @@
         </ul>
       </div>
       <label class="consent-check">
-        <input type="checkbox">
+        <input type="checkbox" id="cn-apk-consent">
         <span>我已阅读并理解上述提示，并确认自行承担下载、安装和使用本 APK 的合规责任。</span>
       </label>
       <div class="dl-host">托管于 <strong>Gitee</strong></div>
-      <a class="dl-card-btn placeholder" aria-disabled="true">下载 APK</a>
-      <div class="dl-meta">v0.4.9 · 安卓 7.0 及以上</div>
+      <a class="dl-card-btn placeholder" id="cn-apk-button" aria-disabled="true" data-href="https://gitee.com/jimmy1992abc/nestli/releases/download/v0.4.10/nestli-cn-release.apk" rel="noopener">下载 APK</a>
+      <div class="dl-meta">v0.4.10 · 安卓 7.0 及以上</div>
     </div>
 
   </section>
@@ -335,6 +335,31 @@
     Apps → Special app access. The APK is signed with the same upload key used on Google Play.
   </p>
 </main>
+
+<script>
+  (function () {
+    var consent = document.getElementById('cn-apk-consent');
+    var button = document.getElementById('cn-apk-button');
+    if (!consent || !button) return;
+    var url = button.getAttribute('data-href');
+    function sync() {
+      if (consent.checked) {
+        button.classList.remove('placeholder');
+        button.removeAttribute('aria-disabled');
+        button.setAttribute('href', url);
+      } else {
+        button.classList.add('placeholder');
+        button.setAttribute('aria-disabled', 'true');
+        button.removeAttribute('href');
+      }
+    }
+    consent.addEventListener('change', sync);
+    button.addEventListener('click', function (e) {
+      if (!consent.checked) e.preventDefault();
+    });
+    sync();
+  })();
+</script>
 
 <footer>
   <div data-i18n="common.footer.copyright">&copy; 2026 Nestli</div>
