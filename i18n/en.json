@@ -52,7 +52,7 @@
       "sub": "Start free. Upgrade when you want a smarter AI, more storage, or to share Premium with up to 9 family members.",
       "free": {
         "name": "Free",
-        "price": "A$0",
+        "price": "US$0 / A$0",
         "per": "/mo",
         "summary": "Core tracking for one family, with a partner to share the load.",
         "f1": "<strong>1 GB</strong> family photo storage",
@@ -66,7 +66,7 @@
       "premium": {
         "name": "Premium",
         "tag": "Most popular",
-        "price": "A$8.99",
+        "price": "US$6.99 / A$8.99",
         "per": "/mo",
         "summary": "Unlimited AI, bigger storage, priority backup.",
         "f1": "<strong>200 GB</strong> family photo storage",
@@ -79,7 +79,7 @@
       },
       "family": {
         "name": "Premium Family",
-        "price": "A$25.99",
+        "price": "US$18.99 / A$25.99",
         "per": "/mo",
         "summary": "Every Premium perk, shared with up to 9 family members.",
         "headline": "<strong>All family members get Premium</strong>",
@@ -92,7 +92,7 @@
         "f7": "<strong>Priority</strong> backup & support"
       },
       "aiNote": "<sup>*</sup> \"Unlimited AI+\" means we don't cap how many questions you ask — there's no per-day or per-message limit. AI usage is subject to a generous monthly token allowance for fair-use; we'll let you know in-app well before you'd ever reach it.",
-      "note": "Prices shown in AUD. Subscriptions are processed by the Google Play Store (iOS coming later) and renew monthly unless cancelled before the next billing period. Cancel any time — your plan stays active until period end. See the full <a href=\"/terms/\">Terms</a> for fair-use and refund details."
+      "note": "Prices shown in USD with AUD reference. Subscriptions are processed by the Google Play Store (iOS coming later) and you'll be charged in your store account's local currency at checkout — actual amount may vary slightly by country. Plans renew monthly unless cancelled before the next billing period. Cancel any time — your plan stays active until period end. See the full <a href=\"/terms/\">Terms</a> for fair-use and refund details."
     },
 
     "downloads": {
