@@ -18,7 +18,7 @@
 <body>
 
 <h1 data-i18n="page.crossBorder.h1">Cross-Border Data Transfer Notice</h1>
-<p class="meta" data-i18n="page.crossBorder.lastUpdated">Last updated: 6 May 2026</p>
+<p class="meta" data-i18n="page.crossBorder.lastUpdated">Last updated: 25 July 2026</p>
 
 <div class="notice" data-i18n="page.crossBorder.notice">
 This notice applies to all users globally, with specific guidance for users in mainland China who must understand cross-border data handling before registering, signing in, uploading data, or continuing to use Nestli.
@@ -38,6 +38,10 @@ This notice applies to all users globally, with specific guidance for users in m
   <li><strong>Xiaomi (MiMo)</strong> — processes AI+ chat requests for Chinese-language questions, including attached non-medical photos; based in China.</li>
   <li><strong>DeepSeek</strong> — fallback AI provider for AI+ chat requests; based in China.</li>
   <li><strong>Resend</strong> — sends transactional emails such as verification codes, password resets, email-change notifications, and family invites.</li>
+  <li><strong>Sentry</strong> — error tracking and performance monitoring; receives crash reports, stack traces, app version, and device and OS information.</li>
+  <li><strong>RevenueCat</strong> — manages AI+ subscription state; receives your user identifier and the app-store purchase receipt.</li>
+  <li><strong>Apple App Store and Google Play</strong> — take subscription payments and issue purchase receipts.</li>
+  <li><strong>Expo, with Apple Push Notification service (iOS) and Firebase Cloud Messaging (Android)</strong> — deliver reminder notifications; receive a device push token and the notification contents.</li>
 </ul>
 
 <h2>2. Purposes of processing</h2>
@@ -71,7 +75,16 @@ This notice applies to all users globally, with specific guidance for users in m
 <p>If you are located in mainland China, before registering, signing in, uploading data, or continuing to use the app you should separately confirm and consent that your account information, device information, usage records, family data, child-related information, photos, log records, and content you actively submit may be transferred to, stored in, accessed from, and processed in regions outside mainland China.</p>
 <p>If you do not consent to the cross-border transfer and processing described above, please do not register, sign in, upload data, or continue to use this app.</p>
 
-<h2>6. User rights</h2>
+<h2>6. Feature availability in mainland China</h2>
+<p>The mainland China distribution of Nestli (the APK released through Gitee for users located in mainland China) disables the following features at runtime, regardless of account tier:</p>
+<ul>
+  <li><strong>AI+ assistant</strong> — chat answers, photo questions, and any other AI-generated content.</li>
+  <li><strong>Voice-to-log recording</strong> — the microphone affordance on the floating action button is removed entirely.</li>
+  <li><strong>Paid subscriptions and in-app purchases</strong> — the subscription page is not reachable from the mainland China distribution.</li>
+</ul>
+<p>Your account, baby profiles, care logs, and photos are shared between the global build and the mainland China distribution. The only difference is which features the app exposes at runtime; switching between distributions does not migrate or duplicate your data.</p>
+
+<h2>7. User rights</h2>
 <p>You may exercise the following rights through in-app features or by contacting us:</p>
 <ul>
   <li>Access, correct, or delete your personal information.</li>
@@ -81,7 +94,7 @@ This notice applies to all users globally, with specific guidance for users in m
   <li>Consult, complain, or request our assistance with data export and deletion.</li>
 </ul>
 
-<h2>7. Contact</h2>
+<h2>8. Contact</h2>
 <p>
 Questions about this notice or cross-border data handling can be sent to:
 <br>
