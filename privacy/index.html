@@ -9,6 +9,7 @@
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
   h1 { border-bottom: 2px solid #A8D5A2; padding-bottom: 8px; }
   h2 { margin-top: 32px; color: #2a6b29; }
+  h3 { margin-top: 24px; color: #2a6b29; font-size: 17px; }
   p, li { font-size: 16px; }
   code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
   .meta { color: #666; font-size: 14px; }
@@ -18,7 +19,7 @@
 <body>
 
 <h1 data-i18n="page.privacy.h1">Nestli Privacy Policy</h1>
-<p class="meta" data-i18n="page.privacy.lastUpdated">Last updated: 25 July 2026</p>
+<p class="meta" data-i18n="page.privacy.lastUpdated">Last updated: 27 July 2026</p>
 
 <div data-i18n-html="page.privacy.body">
 <p>This Privacy Policy describes how Nestli ("we", "our", or "the app"), a mobile
@@ -86,7 +87,7 @@ that screens for content that breaches our policies or applicable law.
 This screening is automated and best-effort: we do not warrant that it
 will catch every prohibited image, and we may remove a photo we
 subsequently determine to be in breach. Concerns about a specific photo
-can be reported to the contact address in section 11.
+can be reported to the contact address in section 12.
 </p>
 <p>
 All data is encrypted in transit (HTTPS). Supabase and AWS S3 encrypt data
@@ -104,8 +105,7 @@ them sell your data.
   <li><strong>Amazon Web Services (AWS)</strong> — Amazon S3 photo storage, Asia Pacific (Sydney) region.</li>
   <li><strong>Amazon CloudFront</strong> — global content delivery network that serves photos from edge locations closer to your device.</li>
   <li><strong>OpenAI</strong> — processes AI+ chat requests and voice-log transcriptions. Baby context data is sent per your questions; voice audio is sent per your recordings. OpenAI states that data submitted via its API is not used to train models.</li>
-  <li><strong>Xiaomi (MiMo)</strong> — processes AI+ chat requests for Chinese-language questions, including any non-medical photos you attach. Based in China.</li>
-  <li><strong>DeepSeek</strong> — fallback AI provider for AI+ chat requests when the primary provider is unavailable. Based in China.</li>
+  <li><strong>Xiaomi (MiMo)</strong> — fallback AI provider for AI+ chat requests, including any non-medical photos you attach, used when the primary provider is unavailable. Outside mainland China the service is operated by Xiaomi Technologies Singapore Pte. Ltd., which holds overseas user data in Europe and Singapore.</li>
   <li><strong>Resend</strong> — sends transactional emails such as verification codes, password resets, email-change notifications, and family invites.</li>
   <li><strong>Sentry</strong> — error tracking and performance monitoring. Receives crash reports, stack traces, the app version, and device and operating-system information when something goes wrong. Nestli does not send your account identifier to Sentry.</li>
   <li><strong>RevenueCat</strong> — manages AI+ subscription state. Receives your Nestli user identifier and the purchase receipt issued by the app store, so the app knows which plan you hold.</li>
@@ -144,7 +144,88 @@ legal guardian on behalf of that child.
   <li>Contact us to request a copy or deletion of your data.</li>
 </ul>
 
-<h2>9. Data Retention</h2>
+<h2>9. European Economic Area, United Kingdom, and Switzerland</h2>
+<p>
+This section applies if you use Nestli from the European Economic Area (EEA),
+the United Kingdom, or Switzerland, and supplements the rest of this policy.
+Where the two differ, this section governs for those users.
+</p>
+
+<h3>9.1 Who is responsible for your data</h3>
+<p>
+The controller of your personal data is <strong>Xin Chen</strong>, trading as
+Nestli, 2 Cassinia Way, Thornleigh NSW 2120, Australia. Data protection
+enquiries go to <a href="mailto:privacy@nestliapp.com">privacy@nestliapp.com</a>.
+</p>
+<p>
+<strong>Representative in the Union (Article 27 GDPR).</strong> Nestli has no
+establishment in the European Union. Our designated representative is:
+<em>not yet appointed</em>. This entry is to be completed before Nestli is
+offered to users in the EEA.
+</p>
+
+<h3>9.2 The legal bases we rely on</h3>
+<ul>
+  <li><strong>Running your account and providing the app</strong> — performance of our contract with you (Article 6(1)(b)).</li>
+  <li><strong>Baby health records, photos, voice notes, and AI+</strong> — your explicit consent (Articles 6(1)(a) and 9(2)(a)). Feeding, sleep, growth, vaccination, and illness records are data concerning health, a special category under Article 9. Nothing obliges you to record them, and AI+ stays off until you turn it on and accept the in-app data-sharing notice.</li>
+  <li><strong>Security, abuse prevention, crash diagnostics, and photo moderation</strong> — our legitimate interests in keeping the service working and safe (Article 6(1)(f)).</li>
+  <li><strong>Meeting record-keeping duties and responding to lawful requests</strong> — compliance with a legal obligation (Article 6(1)(c)).</li>
+</ul>
+<p>
+Where we rely on consent you may withdraw it at any time, and withdrawing it
+does not affect anything we did while it was in force.
+</p>
+
+<h3>9.3 Sending data outside the EEA</h3>
+<p>
+Nestli is operated from Australia and uses providers in several countries.
+Neither Australia nor Singapore is covered by a European Commission adequacy
+decision, so those transfers rely on the Commission's Standard Contractual
+Clauses.
+</p>
+<ul>
+  <li><strong>Australia</strong> — photos are stored in Amazon S3 in the Asia Pacific (Sydney) region and served through Amazon CloudFront.</li>
+  <li><strong>United States</strong> — OpenAI (AI+ answers and voice transcription), Sentry (crash reports), RevenueCat (subscription state), and Resend (transactional email).</li>
+  <li><strong>Europe and Singapore</strong> — Xiaomi MiMo, used only when the primary AI provider is unavailable, operated outside mainland China by Xiaomi Technologies Singapore Pte. Ltd.</li>
+</ul>
+<p>
+<strong>No AI+ data is sent to a provider in mainland China.</strong> DeepSeek
+has been removed from the live provider chain and receives no user data.
+</p>
+
+<h3>9.4 Your rights</h3>
+<p>Under the GDPR and the UK GDPR you may:</p>
+<ul>
+  <li><strong>Access</strong> the personal data we hold about you (Article 15).</li>
+  <li><strong>Correct</strong> data that is wrong or incomplete (Article 16) — most records are editable in the app.</li>
+  <li><strong>Erase</strong> your data (Article 17) — Settings → My Account → Delete account removes your profile and records, or ask us and we will do it.</li>
+  <li><strong>Restrict</strong> our processing in the circumstances Article 18 sets out.</li>
+  <li><strong>Port</strong> the data you gave us, in a structured, commonly used, machine-readable form (Article 20). Settings → Data exports your care records as a spreadsheet; for anything that export does not cover — photos, milestones, family membership, and AI+ chat history — email us and we will supply it.</li>
+  <li><strong>Object</strong> to processing we base on legitimate interests (Article 21).</li>
+  <li><strong>Withdraw consent</strong> — turn AI+ off in Settings, revoke camera, photo, or microphone access in your device settings, or delete the records in question.</li>
+</ul>
+<p>
+Write to <a href="mailto:privacy@nestliapp.com">privacy@nestliapp.com</a> to
+exercise any of these. We reply within one month, and will tell you if we need
+the further two months that Article 12(3) allows.
+</p>
+<p>
+We take no decisions about you by automated means that produce legal or
+similarly significant effects (Article 22). AI+ produces informational
+answers; it decides nothing about you.
+</p>
+
+<h3>9.5 Complaints</h3>
+<p>
+You may lodge a complaint with your national supervisory authority (Article
+77). The European Data Protection Board lists them at
+<a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>;
+in the United Kingdom the authority is the Information Commissioner's Office
+(<a href="https://ico.org.uk/">ico.org.uk</a>). You do not have to contact us
+first, though we would rather you did.
+</p>
+
+<h2>10. Data Retention</h2>
 <p>
 We retain your data for as long as your account is active. When you delete
 your account, your personal information and uploaded photos are removed from
@@ -154,14 +235,14 @@ Nestli — it is passed through to the transcription provider in memory and
 discarded.
 </p>
 
-<h2>10. Changes to This Policy</h2>
+<h2>11. Changes to This Policy</h2>
 <p>
 We may update this Privacy Policy from time to time. Material changes will be
 communicated through the app or by email. Continued use of Nestli after a
 change constitutes acceptance of the updated policy.
 </p>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>
 Questions about this policy or your data can be sent to:
 <br>
