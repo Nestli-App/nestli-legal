@@ -2,3 +2,5 @@ _worker.js
 wrangler.jsonc
 .assetsignore
 CNAME
+.git
+.gitignore
