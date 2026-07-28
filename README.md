@@ -16,7 +16,7 @@ This repository hosts:
 | Most Android users | Google Play Store *(recommended)* |
 | Non-Play-store global users | [Latest GitHub Release](https://github.com/jimmy1992abc/nestli-legal/releases/latest) |
 | 中国大陆地区用户 (中文版) | [Gitee Mirror](https://gitee.com/jimmy1992abc/nestli) |
-| iOS users | App Store *(coming soon)* |
+| iOS users | [App Store](https://apps.apple.com/au/app/nestli-ai-baby-tracker/id6764012408?uo=4) |
 
 The APK published here is the same signed build released to Google Play.
 
