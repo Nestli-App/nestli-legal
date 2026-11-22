@@ -134,7 +134,7 @@
 <main>
 
 <h1 data-i18n="page.terms.h1">Terms &amp; Conditions</h1>
-<p class="meta" data-i18n="page.terms.lastUpdated">Last updated: 28 July 2026</p>
+<p class="meta" data-i18n="page.terms.lastUpdated">Last updated: 22 November 2026</p>
 
 <p class="intro" data-i18n-html="page.terms.intro">
 Welcome to Nestli. These Terms &amp; Conditions (the "Terms") govern your use of the Nestli mobile application and related services (the "Service"). By creating an account you agree to these Terms. If you do not agree, please do not use the Service.
@@ -148,7 +148,7 @@ Welcome to Nestli. These Terms &amp; Conditions (the "Terms") govern your use of
 <p>You are responsible for keeping your username, email, and password confidential. You agree to provide accurate information during sign-up and to keep that information up to date. You must not share your account with others or allow anyone else to access it. You are responsible for all activity that occurs under your account.</p>
 
 <h2>3. Your Data and Privacy</h2>
-<p>Nestli stores the baby care data you log (feedings, diapers, sleep, growth, photos, etc.) so you can access it across your devices and share it with family members you invite. Data is stored on managed cloud infrastructure — text logs and account data on Supabase; photo files on Amazon Web Services (AWS S3, region: Sydney, Australia) and delivered to your device via Amazon CloudFront's global edge network. See <a href="#s15">"Third-Party Service Providers"</a> below for the full list. Your data is not sold to third parties. You can delete your babies, logs, and account at any time, which will remove the associated data from our active systems within a reasonable period.</p>
+<p>Nestli stores the baby care data you log (feedings, diapers, sleep, growth, photos, etc.) so you can access it across your devices and share it with family members you invite. Data is stored on managed cloud infrastructure — text logs and account data on Supabase; photo files on Amazon Web Services (AWS S3, region: Sydney, Australia) and delivered to your device via Amazon CloudFront's global edge network. If your device is detected as being in mainland China, all app traffic between your device and our servers, not only photos, is routed through Amazon CloudFront edge locations outside mainland China on its way to our servers; this does not change where your data is stored. See <a href="#s15">"Third-Party Service Providers"</a> below for the full list. Your data is not sold to third parties. You can delete your babies, logs, and account at any time, which will remove the associated data from our active systems within a reasonable period.</p>
 
 <h2>4. Family Sharing and Invites</h2>
 <p>When you invite another user to a baby profile, that user will be able to view and, depending on the role you assign, add or edit records for that baby. You are responsible for choosing whom you invite and for the role you grant. Revoking a member's access removes their ability to view future data but does not erase entries they previously created.</p>
@@ -198,7 +198,7 @@ Welcome to Nestli. These Terms &amp; Conditions (the "Terms") govern your use of
 <p>
 <strong>Supabase</strong> — application database, authentication, and serverless functions.<br>
 <strong>Amazon Web Services (AWS)</strong> — photo storage on Amazon S3 in the Asia Pacific (Sydney) region.<br>
-<strong>Amazon CloudFront</strong> — global content delivery network used to serve photos from edge locations closer to your device (for example, users in mainland China are served from Hong Kong / Tokyo / Singapore POPs rather than Sydney).<br>
+<strong>Amazon CloudFront</strong> — global content delivery network used to serve photos from edge locations closer to your device. For devices in mainland China, all app traffic between your device and our servers (sign-in, account data, baby records, photos and files, and AI requests where available) is relayed through CloudFront edge locations outside mainland China (for example, Hong Kong / Tokyo / Singapore POPs) over encrypted HTTPS connections, without being cached or stored by CloudFront.<br>
 <strong>OpenAI</strong> — processes AI+ chat requests; baby context data is sent per your questions and is not used to train models.<br>
 <strong>Xiaomi (MiMo)</strong> — fallback AI provider for AI+ chat requests, including attached non-medical photos, used when the primary provider is unavailable; outside mainland China the service is operated by Xiaomi Technologies Singapore Pte. Ltd., which holds overseas user data in Europe and Singapore.<br>
 <strong>Resend</strong> — sends transactional emails such as verification codes, password resets, and invites.

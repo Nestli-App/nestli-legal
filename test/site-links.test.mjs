@@ -25,14 +25,14 @@ test('homepage links the Google Play button to the published Android app', () =>
   assert.doesNotMatch(attributes, /\bplaceholder\b|aria-disabled=/);
 });
 
-test('download cards publish APK version 1.0.1', () => {
+test('download cards publish APK version 1.0.4', () => {
   assert.match(
     downloadsHtml,
-    /href="https:\/\/github\.com\/jimmy1992abc\/nestli-legal\/releases\/download\/v1\.0\.1\/nestli-release\.apk"/,
+    /href="https:\/\/github\.com\/jimmy1992abc\/nestli-legal\/releases\/download\/v1\.0\.4\/nestli-release\.apk"/,
   );
   assert.match(
     downloadsHtml,
-    /data-href="https:\/\/gitee\.com\/jimmy1992abc\/nestli\/releases\/download\/v1\.0\.1\/nestli-release-cn\.apk"/,
+    /data-href="https:\/\/gitee\.com\/jimmy1992abc\/nestli\/releases\/download\/v1\.0\.4\/nestli-release-cn\.apk"/,
   );
 
   const versionLabels = [
@@ -40,7 +40,7 @@ test('download cards publish APK version 1.0.1', () => {
   ].map((match) => match[1]);
 
   assert.deepEqual(versionLabels, [
-    'v1.0.1 · Android 7.0+',
-    'v1.0.1 · 安卓 7.0 及以上',
+    'v1.0.4 · Android 7.0+',
+    'v1.0.4 · 安卓 7.0 及以上',
   ]);
 });

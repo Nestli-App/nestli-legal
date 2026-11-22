@@ -19,7 +19,7 @@
 <body>
 
 <h1 data-i18n="page.privacy.h1">Nestli Privacy Policy</h1>
-<p class="meta" data-i18n="page.privacy.lastUpdated">Last updated: 28 July 2026</p>
+<p class="meta" data-i18n="page.privacy.lastUpdated">Last updated: 22 November 2026</p>
 
 <div data-i18n-html="page.privacy.body">
 <p>This Privacy Policy describes how Nestli ("we", "our", or "the app"), a mobile
@@ -82,6 +82,23 @@ locations in Hong Kong, Tokyo, or Singapore) load photos quickly without
 making the bucket public.
 </p>
 <p>
+If Nestli detects that your device is in mainland China (from the device's
+time zone, the iOS region setting, or because you are using the China edition
+of the app), all app traffic between your device and our servers — including
+sign-in and authentication, account data, baby records, photos and files, and
+AI requests (where available) — is routed through
+<strong>Amazon CloudFront</strong>, Amazon Web Services' content delivery
+network, at edge locations outside mainland China (for example, Hong Kong,
+Tokyo, or Singapore) on its way to our servers. The connection is encrypted
+(HTTPS) between your device and CloudFront and between CloudFront and our
+servers. Caching is disabled for this traffic, so CloudFront does not cache or
+store it, and we do not enable CloudFront access logs for it. CloudFront
+necessarily processes request metadata, such as your device's IP address, to
+deliver the traffic. This routing does not change where your data is stored,
+as described above. Devices not detected as being in mainland China are
+unaffected and connect to our servers directly.
+</p>
+<p>
 Photos uploaded to Nestli pass through an automated image-moderation step
 that screens for content that breaches our policies or applicable law.
 This screening is automated and best-effort: we do not warrant that it
@@ -103,7 +120,7 @@ them sell your data.
 <ul>
   <li><strong>Supabase</strong> — application database, authentication, and serverless functions.</li>
   <li><strong>Amazon Web Services (AWS)</strong> — Amazon S3 photo storage, Asia Pacific (Sydney) region.</li>
-  <li><strong>Amazon CloudFront</strong> — global content delivery network that serves photos from edge locations closer to your device.</li>
+  <li><strong>Amazon CloudFront</strong> — global content delivery network that serves photos from edge locations closer to your device. For devices in mainland China, it also relays all app traffic between your device and our servers through edge locations outside mainland China, without caching or storing it (see section 4).</li>
   <li><strong>OpenAI</strong> — processes AI+ chat requests and voice-log transcriptions. Baby context data is sent per your questions; voice audio is sent per your recordings. OpenAI states that data submitted via its API is not used to train models.</li>
   <li><strong>Xiaomi (MiMo)</strong> — fallback AI provider for AI+ chat requests, including any non-medical photos you attach, used when the primary provider is unavailable. Outside mainland China the service is operated by Xiaomi Technologies Singapore Pte. Ltd., which holds overseas user data in Europe and Singapore.</li>
   <li><strong>Resend</strong> — sends transactional emails such as verification codes, password resets, email-change notifications, and family invites.</li>
