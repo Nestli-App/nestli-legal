@@ -18,7 +18,7 @@
 <body>
 
 <h1 data-i18n="page.crossBorder.h1">Cross-Border Data Transfer Notice</h1>
-<p class="meta" data-i18n="page.crossBorder.lastUpdated">Last updated: 28 July 2026</p>
+<p class="meta" data-i18n="page.crossBorder.lastUpdated">Last updated: 22 November 2026</p>
 
 <div class="notice" data-i18n="page.crossBorder.notice">
 This notice applies to all users globally, with specific guidance for users in mainland China who must understand cross-border data handling before registering, signing in, uploading data, or continuing to use Nestli.
@@ -33,7 +33,7 @@ This notice applies to all users globally, with specific guidance for users in m
   <li><strong>Nestli's Australian operating entity</strong> — operates the app, provides user support, handles data deletion and security requests.</li>
   <li><strong>Supabase</strong> — application database, authentication, and serverless functions.</li>
   <li><strong>Amazon Web Services (AWS)</strong> — photo and file storage in the Asia Pacific (Sydney) region.</li>
-  <li><strong>Amazon CloudFront</strong> — global content delivery network used to deliver photos and files to your device.</li>
+  <li><strong>Amazon CloudFront</strong> — global content delivery network used to deliver photos and files to your device; for devices in mainland China, it also relays all app traffic between your device and our servers through edge locations outside mainland China (see section 4).</li>
   <li><strong>OpenAI</strong> — processes AI+ chat requests and voice transcriptions in supported regions.</li>
   <li><strong>Xiaomi (MiMo)</strong> — fallback AI provider for AI+ chat requests, including attached non-medical photos, used when the primary provider is unavailable; outside mainland China the service is operated by Xiaomi Technologies Singapore Pte. Ltd., which holds overseas user data in Europe and Singapore.</li>
   <li><strong>Resend</strong> — sends transactional emails such as verification codes, password resets, email-change notifications, and family invites.</li>
@@ -69,6 +69,7 @@ This notice applies to all users globally, with specific guidance for users in m
 
 <h2>4. Storage locations</h2>
 <p>Text records, account data, and authentication services may be processed by Supabase in its regions. Photos are primarily stored in Amazon Web Services (AWS S3) Asia Pacific (Sydney) region and may be delivered through Amazon CloudFront's global edge network. Email, AI, transcription, backups, error diagnostics, and other technical services may take place in Australia, the United States, Singapore, or other regions outside mainland China.</p>
+<p>If Nestli detects that your device is in mainland China (from the device's time zone, the iOS region setting, or because you are using the China edition of the app), all app traffic between your device and our servers — including sign-in and authentication, account data, baby records, photos and files, and AI requests (where available) — is routed through Amazon CloudFront, Amazon Web Services' content delivery network, at edge locations outside mainland China (for example, Hong Kong, Tokyo, or Singapore) on its way to our servers. The connection is encrypted (HTTPS) between your device and CloudFront and between CloudFront and our servers. Caching is disabled for this traffic, so CloudFront does not cache or store it, and we do not enable CloudFront access logs for it. CloudFront necessarily processes request metadata, such as your device's IP address, to deliver the traffic. This routing does not change where your data is stored, as described above. Devices not detected as being in mainland China are unaffected and connect to our servers directly.</p>
 
 <h2>5. Specific notice for users in mainland China</h2>
 <p>If you are located in mainland China, before registering, signing in, uploading data, or continuing to use the app you should separately confirm and consent that your account information, device information, usage records, family data, child-related information, photos, log records, and content you actively submit may be transferred to, stored in, accessed from, and processed in regions outside mainland China.</p>
