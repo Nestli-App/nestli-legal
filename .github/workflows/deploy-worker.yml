@@ -35,7 +35,7 @@ jobs:
       - name: Verify the live CN host serves this commit's content
         run: |
           set -euo pipefail
-          expected=$(grep -oE 'releases/download/v[0-9.]+/nestli-release-cn\.apk' downloads/index.html | head -1)
+          expected=$(grep -oE 'releases/download/v[0-9.]+/nestli[.-]release-cn\.apk' downloads/index.html | head -1)
           if [ -z "$expected" ]; then
             echo "::error::could not read the CN APK link out of downloads/index.html"
             exit 1
@@ -43,7 +43,7 @@ jobs:
           echo "expecting: $expected"
           for attempt in $(seq 1 12); do
             live=$(curl -fsSL --max-time 20 https://cn.nestliapp.com/downloads/ \
-                   | grep -oE 'releases/download/v[0-9.]+/nestli-release-cn\.apk' | head -1 || true)
+                   | grep -oE 'releases/download/v[0-9.]+/nestli[.-]release-cn\.apk' | head -1 || true)
             echo "attempt $attempt: $live"
             [ "$live" = "$expected" ] && echo "live host matches" && exit 0
             sleep 10

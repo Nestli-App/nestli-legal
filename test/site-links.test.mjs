@@ -32,7 +32,7 @@ test('download cards publish APK version 1.0.4', () => {
   );
   assert.match(
     downloadsHtml,
-    /data-href="https:\/\/gitee\.com\/jimmy1992abc\/nestli\/releases\/download\/v1\.0\.4\/nestli-release-cn\.apk"/,
+    /data-href="https:\/\/gitee\.com\/jimmy1992abc\/nestli\/releases\/download\/v1\.0\.4\/nestli\.release-cn\.apk"/,
   );
 
   const versionLabels = [
